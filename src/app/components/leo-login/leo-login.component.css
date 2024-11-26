@@ -1,0 +1,9 @@
+input:focus {
+    border-color: #069459; 
+    box-shadow: 0 0 0 3px rgba(2, 94, 29, 0.952);
+  }
+button:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05);
+  }
+  

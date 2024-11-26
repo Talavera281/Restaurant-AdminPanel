@@ -1,0 +1,26 @@
+<div *ngIf="alert" class="fixed inset-0 z-50 flex items-center justify-center">
+  <!-- Superposición oscura -->
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+
+  <!-- Contenedor de la alerta -->
+  <div
+    [ngClass]="alertClass"
+    class="relative z-10 bg-white rounded-lg shadow-lg p-6 text-center w-96 animate-fade-in"
+  >
+    <!-- Ícono dinámico -->
+    <div class="text-4xl mb-4">
+      <i [ngClass]="iconClass"></i>
+    </div>
+
+    <!-- Mensaje -->
+    <p class="text-lg font-medium mb-4">{{ alert.message }}</p>
+
+    <!-- Botón de cerrar -->
+    <button
+      (click)="clearAlert()"
+      class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 focus:outline-none"
+    >
+      Close
+    </button>
+  </div>
+</div>
