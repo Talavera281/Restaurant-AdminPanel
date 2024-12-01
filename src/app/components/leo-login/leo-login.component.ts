@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { AlertService } from '../../services/alert.service';
 import { Router } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-login',
+  standalone: true,
+  imports: [RouterOutlet],
   templateUrl: './leo-login.component.html',
   styleUrls: ['./leo-login.component.css'],
 })
@@ -32,7 +35,7 @@ export class LoginComponent {
     }
 
     if (username === 'admin' && password === '1234') {
-      this.alertService.showAlert('success', 'Inicio de sesión exitoso. ¡Bienvenido!', 3000);
+      sessionStorage.setItem('token', 'fake-jwt-token');
       this.router.navigate(['/welcome']);
     } else {
       this.alertService.showAlert('error', 'Usuario o contraseña incorrectos.', 3000);

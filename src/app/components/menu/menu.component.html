@@ -1,0 +1,154 @@
+<nav class="bg-green-500 text-white px-6 py-4">
+  <!-- Contenedor principal -->
+  <div class="flex items-center justify-between">
+    <!-- Logo -->
+    <div class="font-bold text-xl">Food Finder</div>
+
+    <!-- Botón para abrir/cerrar el menú en pantallas pequeñas -->
+    <button
+      class="lg:hidden text-white"
+      (click)="toggleMenu()"
+    >
+      <i class="fas fa-bars transition-transform duration-300 hover:scale-110"></i>
+    </button>
+
+    <!-- Menú Principal -->
+    <ul
+      [class.hidden]="!menuOpen"
+      class="lg:flex lg:items-center lg:space-x-8 space-y-4 lg:space-y-0 absolute lg:static bg-green-500 w-full lg:w-auto left-0 top-14 lg:top-0 px-6 py-4 lg:p-0"
+    >
+      <!-- Menú Restaurante -->
+      <li>
+        <button
+          (click)="toggleSubMenu('restaurante')"
+          class="flex items-center hover:underline w-full lg:w-auto"
+        >
+          <i class="fas fa-utensils mr-2 auto-spin"></i> Restaurante
+        </button>
+        <!-- Submenú (visible en móviles dentro del menú principal) -->
+        <ul
+          *ngIf="openMenu === 'restaurante'"
+          class="space-y-2 mt-2 bg-green-600 rounded shadow-md lg:hidden"
+        >
+          <li>
+            <button
+              (click)="navigateTo('welcome/platillos')"
+              class="block px-4 py-2 hover:bg-green-700 flex items-center"
+            >
+              <i class="fas fa-chair mr-2 auto-spin"></i> Platillos
+            </button>
+          </li>
+          <li>
+            <button
+              (click)="navigateTo('/domicilio')"
+              class="block px-4 py-2 hover:bg-green-700 flex items-center"
+            >
+              <i class="fas fa-truck mr-2 auto-spin"></i> Domicilio
+            </button>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Menú Ventas -->
+      <li>
+        <button
+          (click)="toggleSubMenu('ventas')"
+          class="flex items-center hover:underline w-full lg:w-auto"
+        >
+          <i class="fas fa-cash-register mr-2 auto-spin"></i> Ventas
+        </button>
+        <!-- Submenú (visible en móviles dentro del menú principal) -->
+        <ul
+          *ngIf="openMenu === 'ventas'"
+          class="space-y-2 mt-2 bg-green-600 rounded shadow-md lg:hidden"
+        >
+          <li>
+            <button
+              (click)="navigateTo('/gastos')"
+              class="block px-4 py-2 hover:bg-green-700 flex items-center"
+            >
+              <i class="fas fa-receipt mr-2 auto-spin"></i> Gastos
+            </button>
+          </li>
+          <li>
+            <button
+              (click)="navigateTo('/productos')"
+              class="block px-4 py-2 hover:bg-green-700 flex items-center"
+            >
+              <i class="fas fa-boxes mr-2 auto-spin"></i> Productos
+            </button>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Monitor de Cocina -->
+      <li>
+        <button
+          (click)="navigateTo('/monitor-cocina')"
+          class="hover:underline flex items-center w-full lg:w-auto"
+        >
+          <i class="fas fa-tv mr-2 auto-spin"></i> Monitor de Cocina
+        </button>
+      </li>
+
+      <!-- Perfil -->
+      <li>
+        <button
+          (click)="navigateTo('/profile')"
+          class="hover:underline flex items-center"
+        >
+          <i class="fas fa-user mr-2 auto-spin"></i> Usuarios
+        </button>
+      </li>
+
+      <!-- Configuración -->
+      <li>
+        <button
+          (click)="navigateTo('/settings')"
+          class="hover:underline flex items-center"
+        >
+          <i class="fas fa-cog mr-2 auto-spin"></i> Configuración
+        </button>
+      </li>
+
+      <!-- Cerrar Sesión -->
+      <li>
+        <button
+          (click)="logout()"
+          class="hover:underline flex items-center"
+        >
+          <i class="fas fa-sign-out-alt mr-2 auto-spin"></i> Cerrar Sesión
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Barra de Submenús (Visible solo en escritorio) -->
+  <div
+    class="hidden lg:block bg-green-600 text-white px-6 py-4"
+    *ngIf="openMenu === 'restaurante'"
+  >
+    <ul class="flex space-x-8">
+      <li>
+        <button
+          (click)="navigateTo('welcome/platillos')"
+          class="hover:underline flex items-center"
+        >
+          <i class="fas fa-chair mr-2 auto-spin"></i> Platillos
+        </button>
+      </li>
+      <li>
+        <button
+          (click)="navigateTo('/domicilio')"
+          class="hover:underline flex items-center"
+        >
+          <i class="fas fa-truck mr-2 auto-spin"></i> Domicilio
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

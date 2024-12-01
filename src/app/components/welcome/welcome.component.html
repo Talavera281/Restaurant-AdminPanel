@@ -1,13 +1,52 @@
-<div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-green-300 via-green-100 to-blue-200">
-    <div class="text-center">
-      <h1 class="text-4xl font-bold text-gray-800">¡Bienvenido a Food Finder!</h1>
-      <p class="text-gray-600 mt-4">Gracias por iniciar sesión.</p>
-      <button
-        class="mt-6 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none"
-        routerLink="/login"
-      >
-        Cerrar Sesión
-      </button>
-    </div>
+<div class="min-h-screen bg-gradient-to-r from-green-300 via-green-100 to-blue-200">
+  <!-- Bienvenida -->
+  <div class="text-center py-10">
+    <h1 class="text-4xl font-bold text-gray-800">¡Bienvenido a Food Finder!</h1>
+    <p class="text-gray-600 mt-4 text-lg">Explora nuestras promociones y platillos destacados.</p>
   </div>
-  
+
+  <!-- Mejores platillos de la semana -->
+  <section class="bg-white rounded-lg shadow-md mx-4 my-8 p-6">
+    <h2 class="text-2xl font-bold text-green-600 mb-4">Mejores Platillos de la Semana</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-green-100 p-4 rounded-md shadow hover:shadow-lg transition">
+        <img src="https://t-golf.club/wp-content/uploads/2022/09/T-golf-gastro42707.jpg" alt="Platillo 1"  class="rounded-md mb-4">
+        <h3 class="text-xl font-semibold text-gray-700">Platillo 1</h3>
+        <p class="text-gray-500">Delicioso platillo preparado con ingredientes frescos.</p>
+      </div>
+      <div class="bg-green-100 p-4 rounded-md shadow hover:shadow-lg transition">
+        <img src="https://villacdn.villagroupresorts.com/uploads/restaurant/cover/68/Villa-del-Palmar-falmingos-Tomatillos-Platillos-5.jpg" alt="Platillo 2" class="rounded-md mb-4">
+        <h3 class="text-xl font-semibold text-gray-700">Platillo 2</h3>
+        <p class="text-gray-500">Sabores únicos que te encantarán.</p>
+      </div>
+      <div class="bg-green-100 p-4 rounded-md shadow hover:shadow-lg transition">
+        <img src="https://res.cloudinary.com/tf-lab/image/upload/f_auto,q_auto,w_800,c_limit/customer/49beed04-a130-4ba2-8e04-ff6697311954/e54397db-52fc-4ee2-be2c-0f338783204b.jpg" alt="Platillo 3" class="rounded-md mb-4">
+        <h3 class="text-xl font-semibold text-gray-700">Platillo 3</h3>
+        <p class="text-gray-500">Un clásico reinventado para ti.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promociones de la semana -->
+  <section class="bg-white rounded-lg shadow-md mx-4 my-8 p-6">
+    <h2 class="text-2xl font-bold text-green-600 mb-4">Promociones de la Semana</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-blue-100 p-4 rounded-md shadow hover:shadow-lg transition">
+        <img src="https://www.laparcelacr.com/wp-content/uploads/2014/11/platos-fuertes-menu.jpg" alt="Promoción 1" class="rounded-md mb-4">
+        <h3 class="text-xl font-semibold text-gray-700">Promoción 1</h3>
+        <p class="text-gray-500">2x1 en bebidas durante todo el día.</p>
+      </div>
+      <div class="bg-blue-100 p-4 rounded-md shadow hover:shadow-lg transition">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/63/5e/1d/img-20161008-230154-largejpg.jpg" alt="Promoción 2" class="rounded-md mb-4">
+        <h3 class="text-xl font-semibold text-gray-700">Promoción 2</h3>
+        <p class="text-gray-500">Postre gratis en compras mayores a $300.</p>
+      </div>
+      <div class="bg-blue-100 p-4 rounded-md shadow hover:shadow-lg transition">
+        <img src="https://img.restaurantguru.com/r571-Calypso-seafood-2020-08-1.jpg" alt="Promoción 3" class="rounded-md mb-4">
+        <h3 class="text-xl font-semibold text-gray-700">Promoción 3</h3>
+        <p class="text-gray-500">15% de descuento en platillos seleccionados.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
