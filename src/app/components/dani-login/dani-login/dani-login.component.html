@@ -1,4 +1,4 @@
-<div class="flex min-h-full bg-[#3E2F2C]">
+<div class="flex min-h-full">
   <!-- Div con imagen de fondo y gradiente -->
   <div class="flex bg-gradient-to-r from-[#0a8c44] via-[#39b661] to-[#086322] flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24 relative">
     <div>
@@ -53,7 +53,24 @@
 
 
   </div>
-  <div class="relative hidden w-0 flex-1 lg:block">
-    <img class="absolute inset-0 size-full object-cover" src="/loginImage.png" alt="">
+
+  <!-- <div class="relative hidden w-0 flex-1 lg:block justify-center">
+      <div>
+        <img class="absolute inset-0 size-full object-cover" src="/loginImage.png" alt="">
+      </div>
+  </div> -->
+  <div class="bg-login-bg bg-cover hidden lg:block bg-center h-screen size-full object-cover inset-0">
+    <div class="flex flex-col items-center justify-center h-full text-black gap-5">
+      <h1 class="text-4xl font-bold text-white">Welcom to FoodFinder</h1>
+      <p class="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-100 font-semibold">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
+
+      <button type="button" class="rounded-full bg-green-50 px-16 py-2.5 text-2xl font-bold text-[#0a8c44] shadow-2xl ring-4 ring-inset ring-green-600 hover:shadow-3xl hover:translate-y-[-4px] transition-all duration-300">
+        Registrate
+      </button>
+
+    </div>
   </div>
+
+
+
 </div>

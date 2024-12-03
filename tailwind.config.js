@@ -2,6 +2,9 @@ module.exports = {
   content: ['./src/**/*.{html,ts,css}'],
   theme: {
     extend: {
+      backgroundImage:{
+        'login-bg': "url('/loginImage.png')",
+      },
       animation: {
         'fade-in': 'fadeIn 1s ease-in-out',
       },
