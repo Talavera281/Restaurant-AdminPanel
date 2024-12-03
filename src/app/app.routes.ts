@@ -4,6 +4,7 @@ import { LoginComponent } from './components/leo-login/leo-login.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PlatillosComponent } from './components/platillos/platillos.component';
+import { UserComponent } from './components/user/user.component';
 import { AuthGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
@@ -18,6 +19,7 @@ export const routes: Routes = [
       { path: 'domicilio', component: PlatillosComponent },
       { path: 'gastos', component: PlatillosComponent },
       { path: 'productos', component: PlatillosComponent },
+      { path: 'user', component: UserComponent },
     ],
   },
   { path: '', redirectTo: '/login', pathMatch: 'full' },

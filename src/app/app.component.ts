@@ -5,7 +5,7 @@ import { AlertComponent } from './components/alert/alert.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AlertComponent], // Importa RouterOutlet para las rutas
+  imports: [RouterOutlet, AlertComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })

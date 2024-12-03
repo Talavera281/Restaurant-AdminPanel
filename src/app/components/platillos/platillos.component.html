@@ -1,1 +1,75 @@
-<h1>Platillos Funka</h1>
+<div class="bg-white shadow rounded-lg p-6">
+    <div class="flex items-center mb-4">
+      <h1 class="text-lg font-semibold text-gray-800 flex items-center">
+        <i class="mdi mdi-food text-2xl text-gray-600 mr-2"></i>
+        Platillos
+      </h1>
+  
+      <button
+        class="ml-auto bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg"
+        (click)="addNew()"
+      >
+        Agregar Nuevo
+      </button>
+    </div>
+  
+    <div class="mb-4">
+      <input
+        type="text"
+        [(ngModel)]="search"
+        placeholder="Buscar platillos..."
+        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring focus:ring-indigo-300 focus:outline-none"
+      />
+    </div>
+  
+
+    <ul class="space-y-4">
+      <li
+        *ngFor="let platillo of filteredPlatillos"
+        class="flex items-center bg-gray-100 shadow rounded-lg p-4"
+      >
+        <!-- Image -->
+        <div class="h-20 w-20 flex-shrink-0 rounded-full overflow-hidden">
+          <img
+            [src]="platillo.image"
+            [alt]="platillo.name"
+            class="w-full h-full object-cover"
+          />
+        </div>
+  
+        <div class="ml-4 flex-grow">
+          <h2 class="text-lg font-semibold text-gray-800">{{ platillo.name }}</h2>
+          <p class="text-sm text-gray-600">
+            Precio: <span class="font-semibold text-gray-900">${{ platillo.price }}</span>
+          </p>
+          <div class="flex items-center mt-1">
+            <ng-container *ngFor="let _ of getStars(platillo.rating)">
+              <i class="mdi mdi-star text-yellow-500 text-sm"></i>
+            </ng-container>
+            <ng-container *ngIf="hasHalfStar(platillo.rating)">
+              <i class="mdi mdi-star-half text-yellow-500 text-sm"></i>
+            </ng-container>
+          </div>
+        </div>
+
+        <div class="flex space-x-2">
+          <button
+            class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg"
+            (click)="editPlatillo(platillo.name)"
+          >
+            Editar
+          </button>
+          <button
+            [ngClass]="{
+              'bg-green-500 hover:bg-green-600': platillo.stock,
+              'bg-red-500 hover:bg-red-600': !platillo.stock
+            }"
+            class="text-white px-4 py-2 rounded-lg"
+          >
+            {{ platillo.stock ? 'Disponible' : 'No Disponible' }}
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
