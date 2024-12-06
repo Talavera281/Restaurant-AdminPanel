@@ -8,6 +8,7 @@ import { RegisterplatilloComponent } from './components/platillos/registerplatil
 import { UserComponent } from './components/user/user.component';
 import { RegisterComponent } from './components/user/register/register.component';
 import { AuthGuard } from './guards/auth.guard';
+import { DaniLoginComponent } from './components/dani-login/dani-login/dani-login.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -24,10 +25,16 @@ export const routes: Routes = [
       { path: 'user', component: UserComponent },
       { path: 'registeruser', component: RegisterComponent },
       { path: 'registerplatillo', component: RegisterplatilloComponent },
+     
+    
     ],
   },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
-];
+  {path: 'dlogin',component: DaniLoginComponent},
+  // { path: 'dmainpage',component: DaniMainPageComponent},
+  { path: 'admin',
+    loadChildren:() => import('./admin/admin.routes').then(m => m.ADMIN_ROUTES)},
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
