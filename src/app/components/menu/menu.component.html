@@ -23,7 +23,7 @@
           (click)="toggleSubMenu('restaurante')"
           class="flex items-center hover:underline w-full lg:w-auto"
         >
-          <i class="fas fa-utensils mr-2 auto-spin"></i> Restaurante
+          <i class="fas fa-chair mr-2 auto-spin"></i> Restaurante
         </button>
         <!-- Submenú (visible en móviles dentro del menú principal) -->
         <ul
@@ -35,7 +35,7 @@
               (click)="navigateTo('welcome/platillos')"
               class="block px-4 py-2 hover:bg-green-700 flex items-center"
             >
-              <i class="fas fa-chair mr-2 auto-spin"></i> Platillos
+              <i class="fas fa-utensils mr-2 auto-spin"></i> Platillos
             </button>
           </li>
           <li>
@@ -94,7 +94,7 @@
       <!-- Perfil -->
       <li>
         <button
-          (click)="navigateTo('/profile')"
+          (click)="navigateTo('welcome/user')"
           class="hover:underline flex items-center"
         >
           <i class="fas fa-user mr-2 auto-spin"></i> Usuarios
@@ -134,7 +134,7 @@
           (click)="navigateTo('welcome/platillos')"
           class="hover:underline flex items-center"
         >
-          <i class="fas fa-chair mr-2 auto-spin"></i> Platillos
+          <i class="fas fa-utensils mr-2 auto-spin"></i> Platillos
         </button>
       </li>
       <li>

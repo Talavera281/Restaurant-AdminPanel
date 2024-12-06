@@ -27,6 +27,7 @@ export class MenuComponent {
 
   navigateTo(route: string) {
     this.router.navigate([route]);
+    this.closeMenu();
   }
 
   closeMenu() {

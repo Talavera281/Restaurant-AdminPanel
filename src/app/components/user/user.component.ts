@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [ CommonModule],
+  imports: [ CommonModule,RouterOutlet],
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css'],
 })
@@ -31,4 +33,8 @@ export class UserComponent {
       image: 'https://e7.pngegg.com/pngimages/519/698/png-clipart-user-profile-avatar-scalable-graphics-icon-girls-face-fashion-girl.png',
     },
   ];
+  constructor(private router: Router) {}
+  navigateTo() {
+  this.router.navigate(['welcome/registeruser']);
+  }
 }

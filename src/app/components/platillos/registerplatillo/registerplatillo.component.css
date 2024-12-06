@@ -1,0 +1,20 @@
+/* Fondo decorativo con patrón */
+.bg-pattern {
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  }
+  
+  /* Animación para botones */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  /* Animación para efectos visuales */
+  .animate-pulse {
+    animation: pulse 2s infinite;
+  }
+  

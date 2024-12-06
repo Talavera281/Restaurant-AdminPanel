@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-platillos',
@@ -18,6 +19,7 @@ export class PlatillosComponent {
       rating: 4.5,
       price: 50,
       stock: true,
+      receta: 'Chiles Guajillo, Pasta de achiote, Jugo de piña , Vinagre blanco, Dientes de ajo, Orégano mexicano, Comino molido, Pimienta negra, Clavos, Sal'
     },
     {
       name: 'Enchiladas Verdes',
@@ -25,13 +27,14 @@ export class PlatillosComponent {
       rating: 4.0,
       price: 80,
       stock: false,
+       receta: 'Chiles Guajillo, Pasta de achiote, Jugo de piña , Vinagre blanco, Dientes de ajo, Orégano mexicano, Comino molido, Pimienta negra, Clavos, Sal'
     },
     {
       name: 'Chiles Rellenos',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQ8Ko-xRNyKEnAf5TcLhoBtsThxr5KShzuGIHx3jP8Rx1ndDnK9klOKWzSS7q2jV5fjY&usqp=CAU',
       rating: 4.8,
       price: 70,
-      stock: true,
+       receta: 'Chiles Guajillo, Pasta de achiote, Jugo de piña , Vinagre blanco, Dientes de ajo, Orégano mexicano, Comino molido, Pimienta negra, Clavos, Sal'
     },
     {
       name: 'Mole Poblano',
@@ -39,8 +42,10 @@ export class PlatillosComponent {
       rating: 5.0,
       price: 120,
       stock: true,
+       receta: 'Chiles Guajillo, Pasta de achiote, Jugo de piña , Vinagre blanco, Dientes de ajo, Orégano mexicano, Comino molido, Pimienta negra, Clavos, Sal'
     },
   ];
+  constructor(private router: Router) {} 
 
   get filteredPlatillos() {
     return this.platillos.filter((platillo) =>
@@ -49,7 +54,7 @@ export class PlatillosComponent {
   }
 
   getStars(rating: number): number[] {
-    return Array(Math.floor(rating)).fill(0); // Devuelve un arreglo de longitud igual al número entero de estrellas
+    return Array(Math.floor(rating)).fill(0);
   }
 
   hasHalfStar(rating: number): boolean {
@@ -57,7 +62,7 @@ export class PlatillosComponent {
   }
 
   addNew() {
-    alert('Agregar nuevo platillo');
+    this.router.navigate(['welcome/registerplatillo']);
   }
 
   editPlatillo(name: string) {
