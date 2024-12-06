@@ -2,67 +2,250 @@
   <div class="flex shrink-0 items-center px-4">
     <img class="h-10 w-auto" src="/whitelogo.png" alt="FoodFinder">
   </div>
-  <nav class="mt-5 flex flex-1 flex-col divide-y divide-green-200 overflow-y-auto" >
+  <nav class="mt-5 flex flex-1 flex-col divide-y divide-green-200 overflow-y-auto">
     <div class="space-y-1 px-2">
       <!-- Current: "bg-cyan-800 text-white", Default: "text-cyan-100 hover:bg-cyan-600 hover:text-white" -->
-      <a routerLinkActive="active-link" routerLink="/admin" [routerLinkActiveOptions]="{ exact: true }" class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-cyan-100 hover:bg-green-500 hover:text-white">
-        <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+      <a routerLinkActive="active-link" routerLink="/admin" [routerLinkActiveOptions]="{ exact: true }"
+        class="group gap-8 flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-white hover:bg-green-500 hover:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="h-7">
+          <g>
+            <g data-name="12">
+              <path
+                d="M218 471.16H114.73a61 61 0 0 1-60.81-60.59V205.23a37.92 37.92 0 0 1 13.69-28.95l18.18-13.46a20.2 20.2 0 0 0-23.34-32.09l-18.63 13.91a78.07 78.07 0 0 0-30.29 60.59v205.56A101.42 101.42 0 0 0 114.73 512H218a20.2 20.2 0 1 0 0-40.39z"
+                data-name="12-2" fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+              <path
+                d="M498.47 204.78a78.76 78.76 0 0 0-29.39-60.59L314 20.54a93.13 93.13 0 0 0-116.69 0l-49.14 35.68a20.58 20.58 0 0 0 24 33.44L222 52.41a53 53 0 0 1 67.32 0l155.07 123.65a37.88 37.88 0 0 1 14.36 29.17v205.56a60.59 60.59 0 0 1-60.59 60.59h-46a8.53 8.53 0 0 1-8.53-8.53v-92.68a53.63 53.63 0 0 0-53.41-53.63H222.9a53.62 53.62 0 0 0-53.63 53.63v35.46a20.2 20.2 0 1 0 40.39 0v-35.46a13 13 0 0 1 13-13.24H290a13 13 0 0 1 13 13v92.9a49.15 49.15 0 0 0 49.15 48.93H397a101.21 101.21 0 0 0 101.25-101.19z"
+                data-name="12-1" fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+            </g>
+          </g>
         </svg>
         Home
       </a>
-      <a routerLinkActive="active-link" routerLink="dishes" class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-cyan-100 hover:bg-green-500 hover:text-white">
-        <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+      <a routerLinkActive="active-link" routerLink="users"
+        class="group gap-5 flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-white hover:bg-green-500 hover:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+          viewBox="0 0 490.667 490.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class="h-8">
+          <g>
+            <path
+              d="M244.587 241.557c32.128-18.389 54.08-52.629 54.08-92.224 0-58.816-47.851-106.667-106.667-106.667S85.333 90.517 85.333 149.333c0 39.595 21.952 73.835 54.08 92.224C59.051 262.656 0 330.603 0 411.136v26.197C0 443.221 4.779 448 10.667 448s10.667-4.779 10.667-10.667v-26.197C21.333 325.611 97.899 256 192 256s170.667 69.611 170.667 155.136v26.197c0 5.888 4.779 10.667 10.667 10.667s10.667-4.779 10.667-10.667v-26.197c-.001-80.533-59.052-148.501-139.414-169.579zm-137.92-92.224C106.667 102.272 144.939 64 192 64s85.333 38.272 85.333 85.333-38.272 85.333-85.333 85.333-85.333-38.271-85.333-85.333z"
+              fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+            <path
+              d="M388.224 241.835c23.125-15.296 38.443-41.451 38.443-71.168 0-47.061-38.272-85.333-85.333-85.333-5.888 0-10.667 4.779-10.667 10.667s4.779 10.667 10.667 10.667c35.285 0 64 28.715 64 64s-28.715 64-64 64c-5.888 0-10.667 4.779-10.667 10.667S335.445 256 341.333 256c70.592 0 128 53.056 128 118.293v20.373c0 5.888 4.779 10.667 10.667 10.667s10.667-4.779 10.667-10.667v-20.373c0-61.653-43.008-114.026-102.443-132.458z"
+              fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+          </g>
+        </svg>
+        Usuarios
+      </a>
+      <a routerLinkActive="active-link" routerLink="dishes"
+        class="group gap-5 flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-white hover:bg-green-500 hover:text-white">
+        <svg class="w-10" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+          <g>
+            <path
+              d="M489.5 341.498H476c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5h13.5c4.136 0 7.5 3.364 7.5 7.5v12c0 4.136-3.364 7.5-7.5 7.5H359.736v-27H441c4.143 0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5h-83.764c-4.719 0-8.834 2.63-10.961 6.5h-23.124c-1.576-3.811-5.33-6.5-9.704-6.5H10.5c-5.79 0-10.5 4.71-10.5 10.5v18.439c0 47.454 38.606 86.061 86.061 86.061H189c4.143 0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5H86.061C46.878 441.498 15 409.62 15 370.437v-13.939h293.947v13.939c0 39.183-31.878 71.061-71.061 71.061H224c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5h13.887c41.438 0 76.123-29.439 84.254-68.5h22.771c.962 5.943 6.114 10.5 12.325 10.5H489.5c12.406 0 22.5-10.094 22.5-22.5v-12c0-12.407-10.094-22.5-22.5-22.5zm-165.553 28.939v-7.439h20.789v10h-20.854c.025-.853.065-1.702.065-2.561zM67.256 157.926a8.503 8.503 0 0 0 7.817 7.815l45.999 3.725c.248.021.495.031.75.031 17.53-.017 34.098-7.466 44.323-19.935a8.566 8.566 0 0 0-.004-10.827 49.265 49.265 0 0 0-2.511-2.831c4.505-2.602 8.459-5.909 11.696-9.813a8.547 8.547 0 0 0-.002-10.896c-3.48-4.199-7.803-7.716-12.744-10.405 7.641-11.077 11.237-24.063 9.987-36.707-.401-4.033-3.62-7.252-7.658-7.654-12.636-1.249-25.625 2.348-36.703 9.988-2.689-4.942-6.206-9.264-10.405-12.745a8.549 8.549 0 0 0-10.897.001c-3.904 3.236-7.21 7.189-9.812 11.694a49.148 49.148 0 0 0-2.829-2.509c-3.137-2.574-7.69-2.576-10.835-.001C70.966 77.078 63.517 93.645 63.5 111.182c0 .248.01.495.028.708zm21.588-75.508a38.223 38.223 0 0 1 2.98 3.864 8.552 8.552 0 0 0 8.348 3.652 8.567 8.567 0 0 0 6.88-5.986c1.157-3.87 2.985-7.442 5.312-10.448 2.205 2.836 3.941 6.164 5.117 9.847a8.509 8.509 0 0 0 5.959 5.666 8.505 8.505 0 0 0 7.975-1.992c7.52-6.954 17.029-11.141 26.313-11.752-.611 9.286-4.798 18.797-11.754 26.317a8.502 8.502 0 0 0-1.989 7.972 8.508 8.508 0 0 0 5.667 5.959c3.682 1.176 7.011 2.912 9.846 5.116-3.007 2.327-6.578 4.155-10.448 5.312a8.564 8.564 0 0 0-5.986 6.88 8.56 8.56 0 0 0 3.653 8.349 38.334 38.334 0 0 1 3.862 2.979c-7.376 6.494-17.648 10.278-28.524 10.343l-30.477-2.468 34.769-34.769a7.5 7.5 0 0 0-10.607-10.607l-34.769 34.769-2.468-30.476c.063-10.881 3.849-21.154 10.341-28.527zM175.929 180.988l13.435 13.435c2.048 2.047 4.736 3.07 7.425 3.07s5.378-1.023 7.426-3.07l18.367-18.367a10.432 10.432 0 0 0 3.075-7.425c0-2.806-1.093-5.443-3.075-7.424l-13.435-13.437c-4.096-4.094-10.755-4.092-14.851 0l-18.367 18.367c-4.094 4.095-4.094 10.756 0 14.851zm25.792-19.429 7.071 7.071-12.004 12.003-7.07-7.07zM230.428 105.225a10.432 10.432 0 0 0 7.425 3.075c2.806 0 5.443-1.093 7.425-3.075l13.433-13.434a10.43 10.43 0 0 0 3.078-7.427c0-2.805-1.092-5.441-3.075-7.425l-18.367-18.367c-4.095-4.094-10.754-4.094-14.851 0l-13.435 13.435c-4.094 4.095-4.094 10.756 0 14.851zm2.492-32.863 12.004 12.003-7.071 7.071-12.003-12.004zM249.772 267.858l18.367 18.367c2.048 2.047 4.736 3.07 7.425 3.07s5.378-1.023 7.426-3.071l13.432-13.433a10.43 10.43 0 0 0 3.078-7.427c0-2.805-1.092-5.441-3.075-7.425l-18.367-18.367a10.432 10.432 0 0 0-7.425-3.075 10.428 10.428 0 0 0-7.424 3.075l-13.437 13.435c-4.093 4.095-4.093 10.756 0 14.851zm20.861-14.496 12.003 12.003-7.071 7.071-12.003-12.003zM95.356 320.672c18.772 0 37.555-5.532 53.734-16.611 8.396 3.211 17.959 1.222 24.53-5.347l3.925-3.926 8.456 8.457a10.51 10.51 0 0 0 7.453 3.082 10.51 10.51 0 0 0 7.454-3.082l16.34-16.34a10.477 10.477 0 0 0 3.087-7.453c0-2.815-1.097-5.463-3.087-7.454l-8.457-8.456 3.922-3.92c7.236-7.237 8.868-18.562 3.969-27.541a36.945 36.945 0 0 0-6.308-8.433c-16.833-16.831-46.84-14.216-66.89 5.832l-.001.001c-6.029 6.029-10.468 12.96-13.29 20.16l-87.978-87.978c-2.445-2.444-5.828-3.772-9.285-3.679a12.73 12.73 0 0 0-9.114 4.285c-33.262 37.644-31.474 94.974 4.069 130.518 18.531 18.53 42.977 27.885 67.471 27.885zm58.734-80.584c14.204-14.2 34.693-16.816 45.678-5.831a21.933 21.933 0 0 1 3.746 5.01c1.733 3.177 1.154 7.186-1.408 9.748l-9.225 9.224a7.504 7.504 0 0 0-.001 10.608l10.606 10.605-10.032 10.033-10.606-10.606a7.502 7.502 0 0 0-10.607 0l-9.229 9.229c-2.52 2.521-6.401 3.168-9.441 1.566a21.949 21.949 0 0 1-5.312-3.908c-10.985-10.985-8.369-31.476 5.831-45.678zm-77.948-23.284 27.729 27.729c-7.709 3.437-17.087 1.994-23.404-4.324-6.319-6.317-7.76-15.692-4.325-23.405zm-42.707-42.707 10.437 10.437c-6.898 8.675-11.456 18.915-13.296 30.001a7.499 7.499 0 0 0 6.17 8.627 7.501 7.501 0 0 0 8.627-6.17c1.323-7.973 4.466-15.377 9.195-21.763l10.548 10.548c-9.049 13.943-7.471 32.823 4.743 45.038 7.017 7.017 16.233 10.524 25.45 10.524 6.829 0 13.655-1.93 19.588-5.781l10.548 10.548c-19.821 14.681-48.01 13.044-65.965-4.912a50.396 50.396 0 0 1-9.853-13.925 7.5 7.5 0 1 0-13.531 6.473 65.34 65.34 0 0 0 12.777 18.06c12.803 12.802 29.619 19.203 46.437 19.203 11.58 0 23.148-3.06 33.415-9.138 1.568 4.664 3.991 8.99 7.294 12.755-30.924 18.19-71.271 13.813-97.526-12.442-29.362-29.36-31.389-76.363-5.058-108.083zM308.607 190.04a10.58 10.58 0 0 0 8.019 3.078 10.613 10.613 0 0 0 7.682-3.915c12.819-15.832 11.611-38.646-2.81-53.068-14.423-14.421-37.236-15.63-53.068-2.81a10.611 10.611 0 0 0-3.915 7.676 10.584 10.584 0 0 0 3.077 8.024zm2.284-43.298c7.776 7.775 9.384 19.469 4.492 28.859L282.03 142.25c9.392-4.892 21.085-3.286 28.861 4.492z"
+              fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+          </g>
         </svg>
         Platillos
       </a>
-      <a href="#" class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
-        <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z" />
+      <a routerLinkActive="active-link" routerLink="reserve"
+        class="group gap-5 flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-white hover:bg-green-500 hover:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+           x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve"
+          class="h-8">
+          <g>
+            <path
+              d="m20.974 13.465-4.551 3.666-1.504-1.92a.9.9 0 0 0-1.417 1.112l2.067 2.637a.9.9 0 0 0 1.272.146l5.261-4.237a.902.902 0 0 0-1.128-1.404z"
+              fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+            <path
+              d="M30.843 22.342 27.722 8.647a2.264 2.264 0 0 0-2.218-1.769H6.475c-.049 0-.096.012-.144.016a2.258 2.258 0 0 0-2.049 1.754L1.158 22.34c-.155.679.005 1.38.439 1.923a2.262 2.262 0 0 0 1.777.856h2.091a.9.9 0 0 0 0-1.8H3.374a.463.463 0 0 1-.37-.178.466.466 0 0 1-.091-.4l2.489-10.907 2.626 11.519a2.263 2.263 0 0 0 2.216 1.769h18.382c.696 0 1.344-.313 1.777-.856a2.265 2.265 0 0 0 .44-1.924zm-1.847.801a.468.468 0 0 1-.37.178H10.244a.47.47 0 0 1-.461-.368L6.477 8.689c.008 0 .013-.007.021-.007h9.021l.01-.002h9.975a.47.47 0 0 1 .462.368l3.121 13.694a.465.465 0 0 1-.091.401z"
+              fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+          </g>
         </svg>
-        Balances
+        Reservaciones
       </a>
-      <a href="#" class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
-        <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
-        </svg>
-        Cards
-      </a>
-      <a href="#" class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
-        <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-        </svg>
-        Recipients
-      </a>
-      <a href="#" class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
-        <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-        </svg>
-        Reports
-      </a>
+
     </div>
     <div class="mt-6 pt-6">
       <div class="space-y-1 px-2">
-        <a href="#" class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
-          <svg class="mr-4 size-6 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0 0 15 0m-15 0a7.5 7.5 0 1 1 15 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077 1.41-.513m14.095-5.13 1.41-.513M5.106 17.785l1.15-.964m11.49-9.642 1.149-.964M7.501 19.795l.75-1.3m7.5-12.99.75-1.3m-6.063 16.658.26-1.477m2.605-14.772.26-1.477m0 17.726-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205 12 12m6.894 5.785-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+        <a href="#"
+          class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-white hover:bg-green-500 hover:text-white">
+          <svg class="mr-4 size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4.5 12a7.5 7.5 0 0 0 15 0m-15 0a7.5 7.5 0 1 1 15 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077 1.41-.513m14.095-5.13 1.41-.513M5.106 17.785l1.15-.964m11.49-9.642 1.149-.964M7.501 19.795l.75-1.3m7.5-12.99.75-1.3m-6.063 16.658.26-1.477m2.605-14.772.26-1.477m0 17.726-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205 12 12m6.894 5.785-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
           </svg>
           Settings
         </a>
-        <a href="#" class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
-          <svg class="mr-4 size-6 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+        <a href="#"
+          class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-white hover:bg-green-500 hover:text-white">
+          <svg class="mr-4 size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
           </svg>
           Help
         </a>
-        <a href="#" class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
-          <svg class="mr-4 size-6 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+        <a href="#"
+          class="group flex items-center rounded-md px-2 py-2 text-sm/6 font-medium text-white hover:bg-green-500 hover:text-white">
+          <svg class="mr-4 size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
           </svg>
           Privacy
         </a>
       </div>
     </div>
   </nav>
+</div>
+
+<div class="relative z-40 lg:hidden" role="dialog" aria-modal="true">
+  <!--
+    Off-canvas menu backdrop, show/hide based on off-canvas menu state.
+
+    Entering: "transition-opacity ease-linear duration-300"
+      From: "opacity-0"
+      To: "opacity-100"
+    Leaving: "transition-opacity ease-linear duration-300"
+      From: "opacity-100"
+      To: "opacity-0"
+  -->
+  <div class="fixed inset-0 bg-gray-600/75" aria-hidden="true"></div>
+
+  <div class="fixed inset-0 z-40 flex">
+    <!--
+      Off-canvas menu, show/hide based on off-canvas menu state.
+
+      Entering: "transition ease-in-out duration-300 transform"
+        From: "-translate-x-full"
+        To: "translate-x-0"
+      Leaving: "transition ease-in-out duration-300 transform"
+        From: "translate-x-0"
+        To: "-translate-x-full"
+    -->
+    <div class="relative flex w-full max-w-xs flex-1 flex-col bg-cyan-700 pb-4 pt-5">
+      <!--
+        Close button, show/hide based on off-canvas menu state.
+
+        Entering: "ease-in-out duration-300"
+          From: "opacity-0"
+          To: "opacity-100"
+        Leaving: "ease-in-out duration-300"
+          From: "opacity-100"
+          To: "opacity-0"
+      -->
+      <div class="absolute right-0 top-0 -mr-12 pt-2">
+        <button type="button"
+          class="relative ml-1 flex size-10 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Close sidebar</span>
+          <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="flex shrink-0 items-center px-4">
+        <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=cyan&shade=300"
+          alt="Easywire logo">
+      </div>
+      <nav class="mt-5 h-full shrink-0 divide-y divide-cyan-800 overflow-y-auto" aria-label="Sidebar">
+        <div class="space-y-1 px-2">
+          <!-- Current: "bg-cyan-800 text-white", Default: "text-cyan-100 hover:bg-cyan-600 hover:text-white" -->
+          <a href="#" class="group flex items-center rounded-md bg-cyan-800 px-2 py-2 text-base font-medium text-white"
+            aria-current="page">
+            <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+            Home
+          </a>
+          <a href="#"
+            class="group flex items-center rounded-md px-2 py-2 text-base font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
+            <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            History
+          </a>
+          <a href="#"
+            class="group flex items-center rounded-md px-2 py-2 text-base font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
+            <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z" />
+            </svg>
+            Balances
+          </a>
+          <a href="#"
+            class="group flex items-center rounded-md px-2 py-2 text-base font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
+            <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+            </svg>
+            Cards
+          </a>
+          <a href="#"
+            class="group flex items-center rounded-md px-2 py-2 text-base font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
+            <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+            </svg>
+            Recipients
+          </a>
+          <a href="#"
+            class="group flex items-center rounded-md px-2 py-2 text-base font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
+            <svg class="mr-4 size-6 shrink-0 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+            </svg>
+            Reports
+          </a>
+        </div>
+        <div class="mt-6 pt-6">
+          <div class="space-y-1 px-2">
+            <a href="#"
+              class="group flex items-center rounded-md px-2 py-2 text-base font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
+              <svg class="mr-4 size-6 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.5 12a7.5 7.5 0 0 0 15 0m-15 0a7.5 7.5 0 1 1 15 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077 1.41-.513m14.095-5.13 1.41-.513M5.106 17.785l1.15-.964m11.49-9.642 1.149-.964M7.501 19.795l.75-1.3m7.5-12.99.75-1.3m-6.063 16.658.26-1.477m2.605-14.772.26-1.477m0 17.726-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205 12 12m6.894 5.785-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+              </svg>
+              Settings
+            </a>
+            <a href="#"
+              class="group flex items-center rounded-md px-2 py-2 text-base font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
+              <svg class="mr-4 size-6 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+              </svg>
+              Help
+            </a>
+            <a href="#"
+              class="group flex items-center rounded-md px-2 py-2 text-base font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
+              <svg class="mr-4 size-6 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+              </svg>
+              Privacy
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="w-14 shrink-0" aria-hidden="true">
+      <!-- Dummy element to force sidebar to shrink to fit close icon -->
+    </div>
+  </div>
 </div>
